@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button href="/actualizar-peli" slot="start">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>Actualizar película</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="videoclubForm" (ngSubmit)="onFormSubmit()">
+    <ion-item>
+      <ion-label position="floating">Nombre:</ion-label>
+      <ion-input formControlName="nombre" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Año:</ion-label>
+      <ion-input formControlName="anio" type="number" required></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Director:</ion-label>
+      <ion-input formControlName="director" type="text" required></ion-input>
+    </ion-item>
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="primary" shape="full" expand="block">Actualizar esta película</ion-button>
+      </ion-col>
+    </ion-row>
+  </form>
+</ion-content>

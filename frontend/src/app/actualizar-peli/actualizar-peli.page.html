@@ -1,0 +1,20 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-button href="/home/menu" slot="start">
+      <ion-icon name="arrow-back-outline"></ion-icon>
+    </ion-button>
+    <ion-title>Actualizar película</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <p class="texto">Actualiza los datos de la peli que quieras clicando en ella</p>
+  <ion-card *ngFor="let v of videoclub" (click)="guardarId(v.id)" href="/pagina-actualizacion">
+    <ion-card-header>
+      <ion-card-title>{{v.nombre}}</ion-card-title>
+      <ion-card-subtitle>director: {{v.director}}</ion-card-subtitle>
+      <ion-card-subtitle>año: {{v.anio}}</ion-card-subtitle>
+    </ion-card-header>
+    
+  </ion-card>
+</ion-content>

@@ -1,0 +1,46 @@
+package com.acoidan.videoclub.entity.services;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.acoidan.videoclub.entity.dao.IVideoclubDao;
+import com.acoidan.videoclub.models.Videoclub;
+
+@Service
+public class VideoclubServiceImpl implements IVideoclubService{
+
+	@Autowired
+	IVideoclubDao videoclubDao;
+	
+	@Override
+	public Videoclub get(long id) {
+		return videoclubDao.findById(id);
+	}
+
+	@Override
+	public List<Videoclub> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void post(Videoclub videoclub) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void put(Videoclub videoclub, long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete(long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

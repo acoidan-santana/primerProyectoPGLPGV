@@ -1,0 +1,9 @@
+package com.acoidan.videoclub.dao;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.acoidan.videoclub.models.Videoclub;
+
+public interface IVideoclubDao extends CrudRepository<Videoclub, Long> {
+
+}

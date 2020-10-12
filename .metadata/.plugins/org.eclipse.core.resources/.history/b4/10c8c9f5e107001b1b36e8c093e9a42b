@@ -1,0 +1,5 @@
+package com.acoidan.videoclub.dao;
+
+public class VideoclubDao {
+
+}
